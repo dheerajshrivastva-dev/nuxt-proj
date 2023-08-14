@@ -6,7 +6,7 @@
         <router-link to="/app/about">About</router-link>
         <router-link to="/tsx">TSX page</router-link>
         <router-link to="/app/ApiTesting">Api Testing Site</router-link>
-        <router-link to="/app/graphql-testing">GraphQL Testing</router-link>
+        <router-link to="/app/GraphqlTesting">GraphQL Testing</router-link>
         <router-link to="/app/userinfo">Profile</router-link>
         <!-- Add more navigation links if needed -->
       </nav>

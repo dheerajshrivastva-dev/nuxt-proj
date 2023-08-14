@@ -1,5 +1,7 @@
 <template>
-  <div class="pokemon-hero-container">
+  <div>
+    <h1>Api Testing site</h1>
+    <div class="pokemon-hero-container">
     <p v-if="!pokemons">Loading...</p>
     <h1 v-if="pokemons">Pokémon List</h1>
     <ul>
@@ -7,6 +9,7 @@
         <h1><NuxtLink :to="`/app/ApiTesting/${index+1}`" class="link-text">{{ item.name }}</NuxtLink></h1>
       </li>
     </ul>
+  </div>
   </div>
 </template>
 <script lang="ts" setup>

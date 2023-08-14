@@ -1,9 +1,12 @@
 <template>
   <section>
-    <div class="container">
+    <div v-if="userData" class="container">
       <h1>Name: {{ userData.name }}</h1>
       <p>Email: {{ userData.email }}</p>
       <p>Number: {{ userData.mobile }}</p>
+    </div>
+    <div v-if="!userData" class="container">
+      <p>please login</p>
     </div>
   </section>
 </template>

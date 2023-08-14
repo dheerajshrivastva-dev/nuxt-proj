@@ -3,6 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: [
     '@pinia/nuxt',
+    '@nuxtjs/apollo'
   ],
   pinia: {
     autoImports: [
@@ -13,5 +14,17 @@ export default defineNuxtConfig({
   },
   router: {
     
+  },
+  apollo: {
+    clients: {
+      default: {
+        httpEndpoint: process.env.NUXT_POKEMON_GRAPHQL_API ?? ''
+      }
+    },
+    autoImports: true,
+    authType: 'Bearer',
+    authHeader: 'Authorization',
+    tokenStorage: 'cookie',
+    proxyCookies: true,
   },
 })
