@@ -5,7 +5,7 @@
         <router-link to="/app/home">Home</router-link>
         <router-link to="/app/about">About</router-link>
         <router-link to="/tsx">TSX page</router-link>
-        <router-link to="/app/api-testing">Api Testing Site</router-link>
+        <router-link to="/app/ApiTesting">Api Testing Site</router-link>
         <router-link to="/app/graphql-testing">GraphQL Testing</router-link>
         <router-link to="/app/userinfo">Profile</router-link>
         <!-- Add more navigation links if needed -->
@@ -43,7 +43,6 @@
 .default-layout {
   font-family: Arial, sans-serif;
   color: #333;
-  min-height: 100vh;
   background: linear-gradient(to bottom, #13112a, #0c270a);
 }
 
@@ -71,6 +70,7 @@
 }
 
 .main-content {
+  min-height: 100vh;
 }
 
 .footer {
